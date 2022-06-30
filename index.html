@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <!-- <script defer src="static/index.js"></script> -->
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post" action="/addname">
+            <div class="box">
+                <li class=" fa fa-user-circle-o"></li>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="box">
+                <li class=" fa fa-phone"></li>
+                <input type="phone" name="phone" id="phone" placeholder="Enter Your Number">
+            </div>
+            <div class="box">
+                <li class=" fa fa-user"></li>
+                <input type="text" name="gender" id="gender" placeholder="Enter Your Gender">
+            </div>
+            <div class="box">
+                <li class=" fa fa-envelope"></li>
+                <input type="email" name="email" id="email" placeholder=" Enter Your Email">
+            </div>
+            <div class="box" style="width: 82%;">
+                <li class=" fa fa-map-marker"></li>
+                <input type="text" name="address" id="address" placeholder="Enter Your Address">
+            </div> <br>
+            <button class="btn" type="submit" onclick="insert()" value="Add Name">Submit</button>
+        </form>
+    </div>
+    <div id="display"></div>
+
+
+</html>
